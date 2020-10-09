@@ -46,7 +46,7 @@ void setup()
       player_side++;
       run = true;
       }
-      textFont(piedra);
+      textFont(Piedra);
       text("YOU",170,50);
       text("Sum "+sum1,50,262);
       text("Sum "+sum2,750,262);
