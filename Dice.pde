@@ -14,7 +14,7 @@ void setup()
       int i = 0;
       int sum1=0;
         while (i<5){
-          Die bob = new Die((int)(Math.random()*20) +100+(70*i),(int)(Math.random()*200) +350);
+          Die bob = new Die(70*i+100,350);
           bob.show();
           bob.roll();
           i++;
