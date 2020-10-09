@@ -61,7 +61,7 @@ void setup()
       }
       void show()
       {
-          fill(0,0,0);
+          fill(250,0,0);
           noStroke();
           rect(myX-25,myY-12,50,25);
           rect(myX-12,myY-25,25,50);
