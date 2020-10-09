@@ -2,11 +2,11 @@ void setup()
   {
       size(1000,600);
       noLoop();
-      background(117, 97, 63);
+      background(11, 97, 63);
   }
   void draw()
   {
-      background(117, 97, 63);
+      background(11, 97, 63);
       fill(87, 72, 47);
       rect(495,0,10,600);
       rect(0,200,1000,10);
