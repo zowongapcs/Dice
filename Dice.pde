@@ -1,5 +1,6 @@
 PImage img1;
 PImage img2;
+PFont Piedra;
 String title="Crewmember";
 String opponent="Captain Turner";
 int score1=0;
@@ -23,6 +24,7 @@ void setup()
       rect(0,300,1000,10);
       image(img1,20,20,100,160);
       image(img2,880,20,100,160);
+      Piedra=createFont("Piedra.pde",50);
       int i = 0;
       int player_side = 0;
       int k = 100;
