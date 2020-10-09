@@ -2,24 +2,20 @@ void setup()
   {
       size(1000,600);
       noLoop();
-      background(11, 97, 63);
+      background(117, 97, 63);
   }
   void draw()
   {
-      background(11, 97, 63);
+      background(117, 97, 63);
       fill(87, 72, 47);
       rect(495,0,10,600);
       rect(0,200,1000,10);
       rect(0,300,1000,10);
-      int i = 0;
       int sum1=0;
-        while (i<5){
-          Die bob = new Die(70*i+100,350);
+          Die bob = new Die(100,350);
           bob.show();
           bob.roll();
-          i++;
           sum1+=bob.num;
-        }
       text(sum1,50,50);
   }
   void mousePressed()
