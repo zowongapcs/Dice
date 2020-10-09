@@ -102,37 +102,37 @@ void setup()
           fill(250,250,250);
           if(roll < 0.16667){
             num = 1;
-            circle(myX,myY,10);
+            arc(myX,myY,10,10,0,PI*2);
           }else if(roll < 0.33333){
             num = 2;
-            circle(myX-12,myY-12,10);
-            circle(myX+12,myY+12,10);
+            arc(myX-12,myY-12,10,10,0,PI*2);
+            arc(myX+12,myY+12,10,10,0,PI*2);
           }else if(roll < 0.5){
             num = 3;
-            circle(myX+12,myY-12,10);
-            circle(myX,myY,10);
-            circle(myX-12,myY+12,10);
+            arc(myX+12,myY-12,10,10,0,PI*2);
+            arc(myX,myY,10,10,0,PI*2);
+            arc(myX-12,myY+12,10,10,0,PI*2);
           }else if(roll < 0.66667){
             num = 4;
-            circle(myX-12,myY-12,10);
-            circle(myX+12,myY-12,10);
-            circle(myX-12,myY+12,10);
-            circle(myX+12,myY+12,10);
+            arc(myX-12,myY-12,10,10,0,PI*2);
+            arc(myX+12,myY-12,10,10,0,PI*2);
+            arc(myX-12,myY+12,10,10,0,PI*2);
+            arc(myX+12,myY+12,10,10,0,PI*2);
           }else if(roll < 0.83333){
             num = 5;
-            circle(myX-12,myY-12,10);
-            circle(myX+12,myY-12,10);
-            circle(myX-12,myY+12,10);
-            circle(myX+12,myY+12,10);
-            circle(myX,myY,10);
+            arc(myX-12,myY-12,10,10,0,PI*2);
+            arc(myX+12,myY-12,10,10,0,PI*2);
+            arc(myX-12,myY+12,10,10,0,PI*2);
+            arc(myX+12,myY+12,10,10,0,PI*2);
+            arc(myX,myY,10,10,0,PI*2);
           }else{
             num = 6;
-            circle(myX-12,myY-12,10);
-            circle(myX+12,myY-12,10);
-            circle(myX-12,myY,10);
-            circle(myX+12,myY,10);
-            circle(myX-12,myY+12,10);
-            circle(myX+12,myY+12,10);
+            arc(myX-12,myY-12,10,10,0,PI*2);
+            arc(myX+12,myY-12,10,10,0,PI*2);
+            arc(myX-12,myY,10,10,0,PI*2);
+            arc(myX+12,myY,10,10,0,PI*2);
+            arc(myX-12,myY+12,10,10,0,PI*2);
+            arc(myX+12,myY+12,10,10,0,PI*2);
           }
       }
       void show()
