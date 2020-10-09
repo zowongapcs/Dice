@@ -1,22 +1,14 @@
 void setup()
   {
-      size(1000,600);
+      size(200,600);
       noLoop();
       background(117, 97, 63);
   }
   void draw()
   {
-      background(117, 97, 63);
-      fill(87, 72, 47);
-      rect(495,0,10,600);
-      rect(0,200,1000,10);
-      rect(0,300,1000,10);
-      int sum1=0;
           Die bob = new Die(100,350);
           bob.show();
           bob.roll();
-          sum1+=bob.num;
-      text(sum1,50,50);
   }
   void mousePressed()
   {
@@ -25,7 +17,7 @@ void setup()
   class Die //models one single dice cube
   {
       //member variable declarations here
-      int myX,myY,num;
+      int myX,myY;
       
       Die(int x, int y) //constructor
       {
@@ -39,32 +31,26 @@ void setup()
           double roll = Math.random();
           fill(250,250,250);
           if(roll < 0.16667){
-            num = 1;
             circle(myX,myY,10);
           }else if(roll < 0.33333){
-            num = 2;
             circle(myX-12,myY-12,10);
             circle(myX+12,myY+12,10);
           }else if(roll < 0.5){
-            num = 3;
             circle(myX+12,myY-12,10);
             circle(myX,myY,10);
             circle(myX-12,myY+12,10);
           }else if(roll < 0.66667){
-            num = 4;
             circle(myX-12,myY-12,10);
             circle(myX+12,myY-12,10);
             circle(myX-12,myY+12,10);
             circle(myX+12,myY+12,10);
           }else if(roll < 0.83333){
-            num = 5;
             circle(myX-12,myY-12,10);
             circle(myX+12,myY-12,10);
             circle(myX-12,myY+12,10);
             circle(myX+12,myY+12,10);
             circle(myX,myY,10);
           }else{
-            num = 6;
             circle(myX-12,myY-12,10);
             circle(myX+12,myY-12,10);
             circle(myX-12,myY,10);
