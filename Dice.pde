@@ -1,6 +1,3 @@
-PImage img1;
-PImage img2;
-PFont piratesBay;
 String title="Crewmember";
 String opponent="Captain Turner";
 int score1=0;
@@ -12,20 +9,13 @@ void setup()
       
       background(117, 97, 63);
       noStroke();
-      img1 = loadImage("pirate1.jpg");
-      img2 = loadImage("pirate2.jpg");
   }
   void draw()
   {
-      //your code here
-      background(117, 97, 63);
       fill(87, 72, 47);
       rect(495,0,10,600);
       rect(0,200,1000,10);
       rect(0,300,1000,10);
-      image(img1,20,20,100,160);
-      image(img2,880,20,100,160);
-      piratesBay=createFont("PiratesBay.ttf",50);
       int i = 0;
       int player_side = 0;
       int k = 100;
@@ -49,7 +39,6 @@ void setup()
       player_side++;
       run = true;
       }
-      textFont(piratesBay);
       text("YOU",170,50);
       text("Sum "+sum1,50,262);
       text("Sum "+sum2,750,262);
